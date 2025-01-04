@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>IJUNIOR 3-4</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-container">
+    
+    <img src="./images/bg-main-desktop.png" class="bg-img">
+    <img src="./images/bg-card-front.png" class="card-front">
+    <img src="./images/bg-card-back.png" class="card-back">
+    <img src="./images/card-logo.svg" class="card-logo">
+    <p class="cardholder-name">GUGU BABAYAGAG</p>
+    <p class="card-number">0000 0000 0000 0000</p>
+    <p class="month-exp-date">00</p>
+    <p class="exp-date">/</p>
+    <p class="year-exp-date">00</p>
+    <p class="cvc">000</p>
+
+    <div class="card-form">
+      
+      <p class="cardholder-name-label">Cardholder name</p>
+      <input type="text" placeholder="e.g. GUGU BABAYAGAG" class="name" maxlength="20">
+      <p class="invalid-text-name">formato errado, so letras e espaços!</p>
+      
+      <p class="card-number-label">Card number</p>
+      <input type="text" placeholder="e.g. 0000 0000 0000 0000" class="number" maxlength="16">
+      <p class="invalid-text-number">formato errado, so é permitido números !</p>
+      
+      <div class="date-cvc">
+        <div>
+          <p class="exp-date-label">Exp. Date (MM/YY)</p>
+          <div class="exp-date-inputs">
+            <input type="text" placeholder="MM" class="mm-exp-date" maxlength="2">
+            <input type="text" placeholder="YY" class="yy-exp-date" maxlength="2">
+          </div>
+          <p class="invalid-text-exp">formato errado, so é permitido números!</p>
+        </div>
+        <div>
+          <p class="exp-date-label">CVC</p>
+          <input type="text" placeholder="e.g. 000" class="cvc-input" maxlength="3">
+          <p class="invalid-text-cvc">formato errado, so é permitido números!</p>
+        </div>
+      </div>
+      
+      <p class="invalid-text-general">verifique novamente</p>
+      <button class="button" id="CONFIRMAR">CONFIRMAR</button>
+      
+    </div>
+    
+    <div class="success-message">
+      <div>
+        <img src="./images/icon-complete.svg" >
+        <p class="success-message-title">valeu!</p>
+        <p class="success-message-text">detalhes adicionados</p>
+        <button class="button" id="continue">Continue</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>  
+</body>
+</html>
